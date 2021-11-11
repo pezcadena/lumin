@@ -22,12 +22,20 @@ body{
     box-shadow: 0px -4px 0px 0px #FFFFFF, 0px 4px 4px 0px rgba(0,0,0,0.36);
 }
 
+a{
+    text-decoration: none;
+}
+
 .pantalla{
     height: 100vh;
 }
 
 .bottomNav{
     border-radius: 25px 25px 0px 0px;
+}
+
+.sidebar{
+    border-radius: 0px 15px 15px 0px;
 }
 
 @media (min-width: 600px) {
