@@ -2,6 +2,18 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+.fondoGris{
+    background-color: #F8F9FA;
+}
+
+.fondoMorado{
+    background-color: #4F4293 !important;
+}
+
+.morado{
+    color: #4F4293 !important; 
+}
+
 .input{
     font-size: 1.4rem;
 }
@@ -12,6 +24,10 @@ body{
 
 .pantalla{
     height: 100vh;
+}
+
+.bottomNav{
+    border-radius: 25px 25px 0px 0px;
 }
 
 @media (min-width: 600px) {
