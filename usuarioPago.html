@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Compra de productos</title>
+    <title>Pago</title>
 </head>
 
 <body class="fondoGris">
@@ -35,8 +35,8 @@
             <a class="navbar-brand" href="#">
                 <img class="img-fluid" src="img/Logo.svg" alt="Logo Lumin" width="50" height="24">
             </a>
-            <a class="" href="#">
-                <img class="img-fluid" src="img/icono-Tienda.svg" alt="Logo Lumin" width="50" height="24">
+            <a class="" href="/usuarioCompraProductos.html">
+                <img class="img-fluid" src="img/icono-Tiendan.svg" alt="Logo Lumin" width="50" height="24">
             </a>
             <a class="" href="#">
                 <img class="img-fluid" src="img/icono-Ventas.svg" alt="Logo Lumin" width="50" height="24">
@@ -53,9 +53,9 @@
                     </a>
                 </div>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2 border-start border-warning border-5 ps-3">
-                        <a class="link-warning" href="#">
-                            <img class="img-fluid" src="img/icono-Tienda.svg" alt="Logo Lumin" width="40" height="24">
+                    <li class="nav-item mb-2 ps-3">
+                        <a class="link-light" href="/usuarioCompraProductos.html">
+                            <img class="img-fluid" src="img/icono-Tiendan.svg" alt="Logo Lumin" width="40" height="24">
                             Compra de productos
                         </a>
                     </li>
@@ -71,15 +71,16 @@
                             Buscar
                         </a>
                     </li>
-                    <li class="nav-item mb-2 ps-3">
-                        <a class="link-light" href="/usuarioPago.html">
-                            <img class="img-fluid" src="img/icono-Pagar.svg" alt="Logo Lumin" width="40" height="24">
+                    <li class="nav-item mb-2 border-start border-warning border-5 ps-3">
+                        <a class="link-warning" href="#">
+                            <img class="img-fluid" src="img/icono-Pagarn.svg" alt="Logo Lumin" width="40" height="24">
                             Pagar
                         </a>
                     </li>
                     <li class="nav-item ps-3">
                         <a class="link-light" href="#">
-                            <img class="img-fluid mx-auto" src="img/icono-Escanear.svg" alt="Logo Lumin" width="40" height="24">
+                            <img class="img-fluid mx-auto" src="img/icono-Escanear.svg" alt="Logo Lumin" width="40"
+                                height="24">
                             Escanear
                         </a>
                     </li>
@@ -87,30 +88,52 @@
             </div>
             <div class="col">
                 <main class="container">
-                    <h1 class="morado my-3 my-md-5 fw-bold">Compra de productos</h1>
+                    <h1 class="morado my-3 mb-md-4 mt-md-5 fw-bold">Pago</h1>
                     <br class="d-none d-md-block">
                     <ul class="list-group luz">
                         <li
-                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center border-0">
-                            Producto 1
-                            <span class="badge fondoMorado rounded-pill">$23</span>
-                        </li>
-                        <li
-                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center border-0">
-                            Producto 2
-                            <span class="badge fondoMorado rounded-pill">$223</span>
-                        </li>
-                        <li
-                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center border-0">
-                            Producto 3
-                            <span class="badge fondoMorado rounded-pill">$331</span>
-                        </li>
-                        <li
                             class="list-group-item list-group-item-action list-group-item-danger d-flex justify-content-between align-items-center border-0">
-                            Total
+                            Total de la compra
                             <span class="badge bg-danger rounded-pill">$3331</span>
                         </li>
                     </ul>
+                    <br>
+                    <h4 class="morado my-3">Método de pago</h4>
+                    <div class="btn-group w-100 luz" role="group" aria-label="Metodo de pago">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1Tarjeta" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio1Tarjeta">Tarjeta</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2Efectivo" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary" for="btnradio2Efectivo">Efectivo</label>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="my-3">
+                        <label for="Input" class="form-label my-1 morado">Efectivo</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-warning fw-bold morado">$</span>
+                            <input type="number" class="form-control" aria-label="Cantidad"
+                                placeholder="Ingresa Cantidad" autofocus>
+                        </div>
+                    </div>
+                    <br>
+                    <ul class="list-group luz">
+                        <li
+                            class="list-group-item list-group-item-action list-group-item-success d-flex justify-content-between align-items-center border-0">
+                            Cambio
+                            <span class="badge bg-success rounded-pill">$33</span>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="row my-3">
+                        <div class="col-md-6 my-3 my-md-0">
+                            <a href="/usuarioCompraProductos.html" class="btn btn-lg fondoMorado text-white fw-bold rounded-pill luz w-100">Pagar</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="/usuarioCompraProductos.html" class="btn btn-lg btn-danger w-100 fw-bold rounded-pill luz">Cancelar</a>
+                        </div>
+                    </div>
+
                 </main>
             </div>
         </div>
@@ -127,9 +150,9 @@
                     Buscar
                 </div>
             </a>
-            <a class="d-flex flex-column link-light" href="/usuarioPago.html">
-                <img class="img-fluid" src="img/icono-Pagar.svg" alt="Logo Lumin" width="50" height="24">
-                <div class="text-center">
+            <a class="d-flex flex-column link-light" href="#">
+                <img class="img-fluid" src="img/icono-Pagarn.svg" alt="Logo Lumin" width="50" height="24">
+                <div class="text-center text-warning">
                     Pagar
                 </div>
             </a>
