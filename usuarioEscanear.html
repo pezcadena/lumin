@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Pago</title>
+    <title>Escanear</title>
 </head>
 
 <body class="fondoGris">
@@ -71,15 +71,15 @@
                             Buscar
                         </a>
                     </li>
-                    <li class="nav-item mb-2 border-start border-warning border-5 ps-3">
-                        <a class="link-warning" href="#">
-                            <img class="img-fluid" src="img/icono-Pagarn.svg" alt="Logo Lumin" width="40" height="24">
+                    <li class="nav-item mb-2 ps-3">
+                        <a class="link-light" href="/usuarioPago.html">
+                            <img class="img-fluid" src="img/icono-Pagar.svg" alt="Logo Lumin" width="40" height="24">
                             Pagar
                         </a>
                     </li>
-                    <li class="nav-item ps-3">
-                        <a class="link-light" href="/usuarioEscanear.html">
-                            <img class="img-fluid mx-auto" src="img/icono-Escanear.svg" alt="Logo Lumin" width="40"
+                    <li class="nav-item border-start border-warning border-5 ps-3">
+                        <a class="link-warning" href="#">
+                            <img class="img-fluid mx-auto" src="img/icono-EscanearLogo.svg" alt="Logo Lumin" width="40"
                                 height="24">
                             Escanear
                         </a>
@@ -88,48 +88,54 @@
             </div>
             <div class="col">
                 <main class="container">
-                    <h1 class="morado my-3 mb-md-4 mt-md-5 fw-bold">Pago</h1>
+                    <h1 class="morado my-3 mb-md-4 mt-md-5 fw-bold">Escanear</h1>
                     <br class="d-none d-md-block">
-                    <ul class="list-group luz">
-                        <li
-                            class="list-group-item list-group-item-action list-group-item-danger d-flex justify-content-between align-items-center border-0">
-                            Total de la compra
-                            <span class="badge bg-danger rounded-pill">$3331</span>
-                        </li>
-                    </ul>
-                    <br>
-                    <h4 class="morado my-3">Método de pago</h4>
-                    <div class="btn-group w-100 luz" role="group" aria-label="Metodo de pago">
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1Tarjeta" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btnradio1Tarjeta">Tarjeta</label>
-
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2Efectivo" autocomplete="off"
-                            checked>
-                        <label class="btn btn-outline-primary" for="btnradio2Efectivo">Efectivo</label>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="my-3">
-                        <label for="Input" class="form-label my-1 morado">Efectivo</label>
-                        <div class="input-group">
-                            <span class="input-group-text bg-warning fw-bold morado">$</span>
-                            <input type="number" class="form-control" aria-label="Cantidad"
-                                placeholder="Ingresa Cantidad" autofocus>
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <div class="card card-body fondoMorado luz rounded rounded-3">
+                                <img class="m-auto" width="250" src="/img/icono-EscanearLogo.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card luz rounded rounded-3 fondoMorado">
+                                <div class="row g-0">
+                                    <div class="col-3 col-md-12 d-flex justify-content-center p-2">
+                                        <img class="img-fluid" width="150" src="/img/icono-producto.svg" alt="">
+                                    </div>
+                                    <div class="col-9 col-md-12 bg-white rounded">
+                                        <div class="card-body">
+                                            <div class="row g-0">
+                                                <div class="col">
+                                                    <div>ID:23343</div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="">
+                                                        <img class="img-fluid" src="/img/Visible.svg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="fw-bold morado">Nombre del producto</div>
+                                            <div class="row g-0">
+                                                <div class="col">
+                                                    Existencia: 2
+                                                </div>
+                                                <div class="col-auto me-1">
+                                                    <div class="badge rounded-pill bg-warning morado">Categoría</div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    $123
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <br>
-                    <ul class="list-group luz">
-                        <li
-                            class="list-group-item list-group-item-action list-group-item-success d-flex justify-content-between align-items-center border-0">
-                            Cambio
-                            <span class="badge bg-success rounded-pill">$33</span>
-                        </li>
-                    </ul>
-                    <br>
                     <div class="row my-3">
                         <div class="col-md-6 my-3 my-md-0">
-                            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                                class="btn btn-lg fondoMorado text-white fw-bold rounded-pill luz w-100">Pagar</button>
+                            <a href="/usuarioCompraProductos.html" class="btn btn-lg fondoMorado text-white fw-bold rounded-pill luz w-100">Agregar</a>
                         </div>
                         <div class="col-md-6">
                             <a href="/usuarioCompraProductos.html"
@@ -145,7 +151,7 @@
 
 
 
-    <nav class="navbar fixed-bottom navbar-dark fondoMorado container d-md-none bottomNav">
+    <nav class="navbar navbar-dark fondoMorado container d-md-none bottomNav fixed-bottom">
         <div class="container">
             <a class="d-flex flex-column link-light" href="#">
                 <img class="img-fluid" src="img/icono-buscar.svg" alt="Logo Lumin" width="50" height="24">
@@ -153,15 +159,15 @@
                     Buscar
                 </div>
             </a>
-            <a class="d-flex flex-column link-light" href="#">
-                <img class="img-fluid" src="img/icono-Pagarn.svg" alt="Logo Lumin" width="50" height="24">
-                <div class="text-center text-warning">
+            <a class="d-flex flex-column link-light" href="/usuarioPago.html">
+                <img class="img-fluid" src="img/icono-Pagar.svg" alt="Logo Lumin" width="50" height="24">
+                <div class="text-center">
                     Pagar
                 </div>
             </a>
-            <a class="d-flex flex-column link-light" href="/usuarioEscanear.html">
-                <img class="img-fluid mx-auto" src="img/icono-Escanear.svg" alt="Logo Lumin" width="50" height="24">
-                <div class="text-center">
+            <a class="d-flex flex-column link-light" href="#">
+                <img class="img-fluid mx-auto" src="img/icono-EscanearLogo.svg" alt="Logo Lumin" width="50" height="24">
+                <div class="text-center text-warning">
                     Escanear
                 </div>
             </a>
