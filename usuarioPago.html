@@ -103,7 +103,8 @@
                         <input type="radio" class="btn-check" name="btnradio" id="btnradio1Tarjeta" autocomplete="off">
                         <label class="btn btn-outline-primary" for="btnradio1Tarjeta">Tarjeta</label>
 
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2Efectivo" autocomplete="off" checked>
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2Efectivo" autocomplete="off"
+                            checked>
                         <label class="btn btn-outline-primary" for="btnradio2Efectivo">Efectivo</label>
                     </div>
                     <br>
@@ -127,10 +128,12 @@
                     <br>
                     <div class="row my-3">
                         <div class="col-md-6 my-3 my-md-0">
-                            <a href="/usuarioCompraProductos.html" class="btn btn-lg fondoMorado text-white fw-bold rounded-pill luz w-100">Pagar</a>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                class="btn btn-lg fondoMorado text-white fw-bold rounded-pill luz w-100">Pagar</button>
                         </div>
                         <div class="col-md-6">
-                            <a href="/usuarioCompraProductos.html" class="btn btn-lg btn-danger w-100 fw-bold rounded-pill luz">Cancelar</a>
+                            <a href="/usuarioCompraProductos.html"
+                                class="btn btn-lg btn-danger w-100 fw-bold rounded-pill luz">Cancelar</a>
                         </div>
                     </div>
 
@@ -164,6 +167,18 @@
             </a>
         </div>
     </nav>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <h1>Compra finalizada</h1>
+                    <img src="/img/modalCompra.svg" alt="">
+                    <h1>Gracias</h1>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
