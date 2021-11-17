@@ -43,3 +43,53 @@ a{
         font-size:x-large;
     }
 }
+
+.icon-link {
+    color: white;
+}
+/* ----------------- */
+
+.icon-link.active {
+    color: #FFC107;
+}
+
+.btn-morado {
+    background-color: #4F4293 !important;
+}
+
+.btn-float {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:3em;
+    height: 3em;
+    bottom: 2em;
+    right: 2em;
+    background-color: #FFC107; 
+    color:white; border-radius: 50%;
+}
+
+.card .desc {
+    height: 0;
+    overflow: hidden;
+    transition: all .4s ease-in-out;    
+}
+
+.card:hover .desc {
+    /* height: 150px; */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    /* transition: .5 ease-in-out; */
+}
+
+.card .desc .description {
+    opacity: 0;
+    font-size: 12px;
+    transition: all .4s ease;
+}
+
+.card:hover .desc .description {
+    opacity: 1;
+}
